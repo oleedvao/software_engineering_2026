@@ -1,0 +1,29 @@
+@startuml
+'https://plantuml.com/component-diagram
+
+package External {
+    component ISBNAPI
+}
+
+package Backend {
+    component WebAPI
+    component BookService
+
+    database MySQLDatabase
+}
+
+
+package Frontend {
+    component WebFrontend
+    component IOSFrontend
+}
+
+WebFrontend --> WebAPI
+IOSFrontend --> WebAPI
+WebAPI --> BookService
+BookService --> MySQLDatabase
+BookService --> ISBNAPI
+
+
+
+@enduml

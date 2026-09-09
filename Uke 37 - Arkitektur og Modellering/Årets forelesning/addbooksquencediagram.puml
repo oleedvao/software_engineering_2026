@@ -1,0 +1,31 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+Frontend -> WebAPI: add book with data
+
+WebAPI -> BookService: add book with data
+
+BookService -> MySQLDatabase: add book with data
+
+alt success
+
+    MySQLDatabase --> BookService: book created
+
+    BookService --> WebAPI: book created
+
+    WebAPI --> Frontend: 200: display created message
+
+
+else failure
+
+    MySQLDatabase --> BookService: sql error
+
+    BookService --> WebAPI: failed to create book
+
+    WebAPI --> Frontend: 500: display error message
+
+end
+
+@enduml
