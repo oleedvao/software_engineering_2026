@@ -8,6 +8,10 @@ import core.exception.ArtistRepositoryException;
 
 import java.util.ArrayList;
 
+/*
+ArtistService using simple parameters and return types instead of complicated DTOs.
+See ArtistServiceWithDTOs for an even more loosely coupled example of the same class.
+ */
 public class ArtistService {
 
     ArtistRepositoryPort artistRepository;
