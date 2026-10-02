@@ -1,7 +1,5 @@
 package core.domain;
 
-import core.Song;
-
 import java.util.ArrayList;
 
 public class Album {
