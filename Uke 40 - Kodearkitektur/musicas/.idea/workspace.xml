@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3742eee-d1eb-4e78-a61a-6f91b8c27c27" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/core/dto/CreateArtistRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/core/dto/GetArtistSongsWithLengthRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/core/dto/GetArtistSongsWithLengthResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/core/exception/RequestException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/Musicas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Musicas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/service/ArtistService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/service/ArtistService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/core/service/ArtistServiceBeforeDTOs.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +39,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "dto-video",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
