@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3742eee-d1eb-4e78-a61a-6f91b8c27c27" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/core/dto/CreateArtistRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/core/dto/GetArtistSongsWithLengthRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/core/dto/GetArtistSongsWithLengthResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/core/exception/RequestException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/Musicas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Musicas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/dto/CreateArtistRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/dto/GetArtistSongsWithLengthRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/dto/GetArtistSongsWithLengthResult.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/core/service/ArtistService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/service/ArtistService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/service/ArtistServiceWithDTOs.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +40,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Musicas.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -69,7 +70,7 @@
       <workItem from="1790596444241" duration="1541000" />
       <workItem from="1790923903020" duration="740000" />
       <workItem from="1791186760768" duration="755000" />
-      <workItem from="1791187674983" duration="460000" />
+      <workItem from="1791187674983" duration="3263000" />
     </task>
     <servers />
   </component>
