@@ -20,6 +20,7 @@ public class ArtistService {
         this.artistRepository = artistRepository;
     }
 
+
     public void createArtist(String name) throws ArtistRepositoryException {
         Artist artist = new Artist(name);
 
@@ -27,7 +28,9 @@ public class ArtistService {
         artistRepository.createArtist(artist);
     }
 
-    public ArrayList<SongDTO> getArtistSongsWithLength(int artistId, int lengthInSeconds) throws ArtistRepositoryException{
+
+    public ArrayList<SongDTO> getArtistSongsWithLength(int artistId, int lengthInSeconds)
+            throws ArtistRepositoryException{
 
         ArrayList<Song> artistSongs = artistRepository.getArtistSongs(artistId);
 

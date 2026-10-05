@@ -1,11 +1,12 @@
 package app;
 
-import core.dto.CreateArtistRequest;
+import core.dto.SongDTO;
 import core.exception.ArtistRepositoryException;
 import core.port.ArtistRepositoryPort;
 import core.service.ArtistService;
-import core.service.ArtistServiceWithDTOs;
 import storage.JSONFileArtistRepository;
+
+import java.util.ArrayList;
 
 public class Musicas {
 
@@ -13,13 +14,13 @@ public class Musicas {
 
         ArtistRepositoryPort artistRepository = new JSONFileArtistRepository();
 
-        //ArtistService artistService = new ArtistService(artistRepository);
-        ArtistServiceWithDTOs artistService = new ArtistServiceWithDTOs(artistRepository);
+        ArtistService artistService = new ArtistService(artistRepository);
 
         // API-endpoint /api/create_artist
         try {
-            //artistService.createArtist("Ole");
-            artistService.createArtist(new CreateArtistRequest("Ole"));
+            artistService.createArtist("Ole");
+            ArrayList<SongDTO> songDTOs = artistService.getArtistSongsWithLength(1, 200);
+
         }
         catch (ArtistRepositoryException e) {
             System.err.println("Something went wrong.");;

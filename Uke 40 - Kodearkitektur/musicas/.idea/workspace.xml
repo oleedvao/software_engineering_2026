@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3742eee-d1eb-4e78-a61a-6f91b8c27c27" name="Changes" comment="" />
+    <list default="true" id="d3742eee-d1eb-4e78-a61a-6f91b8c27c27" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/Musicas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Musicas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/dto/CreateArtistRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/dto/GetArtistSongsWithLengthRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/dto/GetArtistSongsWithLengthResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/service/ArtistService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/service/ArtistService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/service/ArtistServiceWithDTOs.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,7 +44,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "dto-video",
     "kotlin-language-version-configured": "true",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
@@ -60,6 +68,8 @@
       <workItem from="1790332813354" duration="6564000" />
       <workItem from="1790596444241" duration="1541000" />
       <workItem from="1790923903020" duration="740000" />
+      <workItem from="1791186760768" duration="755000" />
+      <workItem from="1791187674983" duration="460000" />
     </task>
     <servers />
   </component>
