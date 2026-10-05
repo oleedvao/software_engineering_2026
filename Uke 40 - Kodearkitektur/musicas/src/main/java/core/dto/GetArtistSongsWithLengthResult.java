@@ -3,6 +3,7 @@ package core.dto;
 import java.util.ArrayList;
 
 public class GetArtistSongsWithLengthResult {
+
     private final int artistId;
     private final int filteredLengthInSeconds;
     private final ArrayList<SongDTO> songDTOs;
