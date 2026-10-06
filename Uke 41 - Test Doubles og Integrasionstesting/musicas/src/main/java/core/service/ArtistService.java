@@ -24,6 +24,9 @@ public class ArtistService {
         this.artistRepository = artistRepository;
     }
 
+    public int getNumArtists() {
+        return artistRepository.getNumArtists();
+    }
 
     public void createArtist(CreateArtistRequest request) throws ArtistRepositoryException {
         Objects.requireNonNull(request);

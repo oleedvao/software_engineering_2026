@@ -19,6 +19,11 @@ public class ArtistRepositoryMySQLAdapter implements ArtistRepositoryPort {
     }
 
     @Override
+    public int getNumArtists() {
+        return 0;
+    }
+
+    @Override
     public void createArtist(Artist artist) throws ArtistRepositoryException {
         String sql = "INSERT INTO artists (name) VALUES (?)";
 

@@ -10,4 +10,6 @@ public interface ArtistRepositoryPort {
 
     void createArtist(Artist artist) throws ArtistRepositoryException;
     ArrayList<Song> getArtistSongs(int artistId) throws ArtistRepositoryException;
+
+    int getNumArtists();
 }
