@@ -19,11 +19,6 @@ public class ArtistRepositoryMySQLAdapter implements ArtistRepositoryPort {
     }
 
     @Override
-    public int getNumArtists() {
-        return 0;
-    }
-
-    @Override
     public void createArtist(Artist artist) throws ArtistRepositoryException {
         String sql = "INSERT INTO artists (name) VALUES (?)";
 
@@ -62,5 +57,10 @@ public class ArtistRepositoryMySQLAdapter implements ArtistRepositoryPort {
         } catch (SQLException e) {
             throw new ArtistRepositoryException("Could not retrieve songs for artist with id " + artistId, e);
         }
+    }
+
+    @Override
+    public int getNumArtists() {
+        return 0;
     }
 }
