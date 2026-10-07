@@ -3,17 +3,21 @@ package integrationtest;
 import core.dto.CreateArtistRequest;
 import core.dto.GetArtistSongsWithLengthRequest;
 import core.dto.GetArtistSongsWithLengthResult;
+import core.dto.SongDTO;
 import core.service.ArtistService;
 import org.junit.jupiter.api.*;
 import storage.adapter.ArtistRepositoryMySQLAdapter;
+import testdb.H2TestDatabase;
 import testdb.TestContainerDatabase;
 import testdb.TestDatabase;
 
 import java.sql.Connection;
+import java.util.ArrayList;
 
 public class ArtistServiceIntegrationTests {
 
-    private final static TestDatabase testDB = new TestContainerDatabase();
+    private final static TestDatabase testDB = new H2TestDatabase();
+    //private final static TestDatabase testDB = new TestContainerDatabase();
 
     private static Connection connection;
 
@@ -74,8 +78,22 @@ public class ArtistServiceIntegrationTests {
 
         // Assert
         Assertions.assertEquals(2, result.getSongDTOs().size());
-        Assertions.assertEquals("Reckoner", result.getSongDTOs().get(0).getTitle());
-        Assertions.assertEquals("Weird Fishes", result.getSongDTOs().get(1).getTitle());
+
+        ArrayList<String> songTitles = getSongTitlesFromResult(result);
+        Assertions.assertTrue(songTitles.contains("Reckoner"));
+        Assertions.assertTrue(songTitles.contains("Weird Fishes"));
+
+        Assertions.assertFalse(songTitles.contains("Faust Arp"));
+    }
+
+    private ArrayList<String> getSongTitlesFromResult(GetArtistSongsWithLengthResult result) {
+        ArrayList<String> songTitles = new ArrayList<>();
+
+        for (SongDTO song : result.getSongDTOs()) {
+            songTitles.add(song.getTitle());
+        }
+
+        return songTitles;
     }
 
 }

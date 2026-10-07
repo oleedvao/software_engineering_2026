@@ -4,6 +4,7 @@ import core.domain.Artist;
 import core.domain.Song;
 import org.junit.jupiter.api.*;
 import storage.adapter.ArtistRepositoryMySQLAdapter;
+import testdb.H2TestDatabase;
 import testdb.TestContainerDatabase;
 import testdb.TestDatabase;
 
@@ -12,7 +13,9 @@ import java.util.ArrayList;
 
 public class ArtistRepositoryMySQLAdapterIntegrationTests {
 
-    private final static TestDatabase testDB = new TestContainerDatabase();
+
+    private final static TestDatabase testDB = new H2TestDatabase();
+    // private final static TestDatabase testDB = new TestContainerDatabase();
 
     private static Connection connection;
 
