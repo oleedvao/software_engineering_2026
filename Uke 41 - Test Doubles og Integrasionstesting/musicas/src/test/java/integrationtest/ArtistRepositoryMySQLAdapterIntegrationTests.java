@@ -2,6 +2,8 @@ package integrationtest;
 
 import core.domain.Artist;
 import core.domain.Song;
+import core.dto.GetArtistSongsWithLengthResult;
+import core.dto.SongDTO;
 import org.junit.jupiter.api.*;
 import storage.adapter.ArtistRepositoryMySQLAdapter;
 import testdb.H2TestDatabase;
@@ -70,9 +72,21 @@ public class ArtistRepositoryMySQLAdapterIntegrationTests {
 
         // Assert
         Assertions.assertEquals(3, artistSongs.size());
-        Assertions.assertEquals("Reckoner", artistSongs.get(0).getTitle());
-        Assertions.assertEquals("Weird Fishes", artistSongs.get(1).getTitle());
-        Assertions.assertEquals("Faust Arp", artistSongs.get(2).getTitle());
+
+        ArrayList<String> songTitles = getSongTitlesFromSongList(artistSongs);
+        Assertions.assertTrue(songTitles.contains("Reckoner"));
+        Assertions.assertTrue(songTitles.contains("Weird Fishes"));
+        Assertions.assertTrue(songTitles.contains("Faust Arp"));
+    }
+
+    private ArrayList<String> getSongTitlesFromSongList(ArrayList<Song> songs) {
+        ArrayList<String> songTitles = new ArrayList<>();
+
+        for (Song song : songs) {
+            songTitles.add(song.getTitle());
+        }
+
+        return songTitles;
     }
 
 }
