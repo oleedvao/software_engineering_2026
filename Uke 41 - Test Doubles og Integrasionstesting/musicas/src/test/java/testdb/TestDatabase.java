@@ -33,11 +33,29 @@ public abstract class TestDatabase {
 
     public void createDummyData() throws Exception{
         try (Statement statement = connection.createStatement()) {
+
             insertIntoArtists("Radiohead");
 
             insertIntoSongs("Reckoner", 1, 250, 5);
             insertIntoSongs("Weird Fishes", 1, 300, 5);
             insertIntoSongs("Faust Arp", 1, 150, 5);
+        }
+    }
+
+    /*
+    Resets all data and IDs so that only empty tables remain
+     */
+    public void truncateTables() throws Exception{
+        String resetArtists = "TRUNCATE TABLE artists;";
+
+        try (PreparedStatement preparedStatement = connection.prepareStatement(resetArtists)) {
+            preparedStatement.executeUpdate();
+        }
+
+        String resetSongs = "TRUNCATE TABLE songs;";
+
+        try (PreparedStatement preparedStatement = connection.prepareStatement(resetSongs)) {
+            preparedStatement.executeUpdate();
         }
     }
 
