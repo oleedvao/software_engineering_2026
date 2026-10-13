@@ -5,7 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3742eee-d1eb-4e78-a61a-6f91b8c27c27" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/core/service/ArtistServiceBeforeDTOs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Uke 41 - Test Doubles og Integrasionstesting/musicas/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Uke 41 - Test Doubles og Integrasionstesting/musicas/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Uke 41 - Test Doubles og Integrasionstesting/musicas/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Uke 41 - Test Doubles og Integrasionstesting/musicas/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Uke 41 - Test Doubles og Integrasionstesting/musicas/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Uke 41 - Test Doubles og Integrasionstesting/musicas/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Uke 41 - Test Doubles og Integrasionstesting/musicas/src/main/java/app/Musicas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Uke 41 - Test Doubles og Integrasionstesting/musicas/src/main/java/core/domain/Album.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Uke 41 - Test Doubles og Integrasionstesting/musicas/src/main/java/core/domain/Artist.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Uke 41 - Test Doubles og Integrasionstesting/musicas/src/main/java/core/domain/Song.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Uke 41 - Test Doubles og Integrasionstesting/musicas/src/main/java/core/dto/CreateArtistRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Uke 41 - Test Doubles og Integrasionstesting/musicas/src/main/java/core/dto/GetArtistSongsWithLengthRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Uke 41 - Test Doubles og Integrasionstesting/musicas/src/main/java/core/dto/GetArtistSongsWithLengthResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Uke 41 - Test Doubles og Integrasionstesting/musicas/src/main/java/core/dto/SongDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Uke 41 - Test Doubles og Integrasionstesting/musicas/src/main/java/core/exception/ArtistRepositoryException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Uke 41 - Test Doubles og Integrasionstesting/musicas/src/main/java/core/exception/RequestException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Uke 41 - Test Doubles og Integrasionstesting/musicas/src/main/java/core/port/ArtistRepositoryPort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Uke 41 - Test Doubles og Integrasionstesting/musicas/src/main/java/core/service/ArtistService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Uke 41 - Test Doubles og Integrasionstesting/musicas/src/main/java/core/service/ArtistServiceBeforeDTOs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Uke 41 - Test Doubles og Integrasionstesting/musicas/src/main/java/storage/JSONFileArtistRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Uke 41 - Test Doubles og Integrasionstesting/musicas/src/main/java/storage/MySQLArtistRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +59,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "mocking-and-inttesting-video",
     "kotlin-language-version-configured": "true",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
