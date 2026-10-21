@@ -62,6 +62,7 @@ public class ArtistServiceIntegrationTests {
         // Assert
         Assertions.assertEquals(2, testDB.countRowsInTable("artists"));
         Assertions.assertEquals("Ween", testDB.getArtistName(2));
+        Assertions.assertEquals(0, 1);
     }
 
     @Test
