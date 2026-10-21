@@ -16,8 +16,8 @@ import java.util.ArrayList;
 
 public class ArtistServiceIntegrationTests {
 
-    private final static TestDatabase testDB = new H2TestDatabase();
-    //private final static TestDatabase testDB = new TestContainerDatabase();
+    //private final static TestDatabase testDB = new H2TestDatabase();
+    private final static TestDatabase testDB = new TestContainerDatabase();
 
     private static Connection connection;
 
@@ -62,7 +62,6 @@ public class ArtistServiceIntegrationTests {
         // Assert
         Assertions.assertEquals(2, testDB.countRowsInTable("artists"));
         Assertions.assertEquals("Ween", testDB.getArtistName(2));
-        Assertions.assertEquals(0, 1);
     }
 
     @Test
