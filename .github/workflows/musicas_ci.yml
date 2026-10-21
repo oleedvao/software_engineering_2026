@@ -29,5 +29,5 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: |
-       cd "Uke 41 - Test Doubles og Integrasiontesting/musicas"
+       cd "Uke 41 - Test Doubles og Integrasionstesting/musicas"
        mvn --batch-mode --update-snapshots verify
